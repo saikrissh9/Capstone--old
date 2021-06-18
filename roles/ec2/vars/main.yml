@@ -1,0 +1,17 @@
+---
+# vars file for ec2
+instance_tag:
+        - master
+        - slave1
+        - slave2
+
+python_pkgs:
+        - boto
+        - boto3
+
+sg_name: lab
+region_name: us-west-1
+subnet_name: subnet-31db5c57
+ami_id: ami-0b2ca94b5b49e0132
+keypair: lab
+instance_flavour: t2.micro
