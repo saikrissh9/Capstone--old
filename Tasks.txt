@@ -1,0 +1,13 @@
+Ansible server setup:
+    Create user
+    Add it to Sudo group
+    disable passwd using visudo 
+    Install Ansible
+    install git
+    git clone repo
+   chmod 400 ansible.pem
+  EDITOR=nano ansible-vault create cred.yml
+  ansible-vault view vault.yml
+
+
+
