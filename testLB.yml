@@ -45,8 +45,8 @@
 - name: Create a target group with instance targets
   community.aws.elb_target_group:
     name: mytargetgroup
-    aws_access_key: AKIATLVV7HZZWXRO46H5
-    aws_secret_key: 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
+    aws_access_key: {{access_key}}
+    aws_secret_key: {{aws_secret_key}}
     region: us-west-1
     protocol: http
     port: 81 
@@ -72,8 +72,8 @@
 #       ec2_elb_lb:
 #         name: aws-elb-demo
 #         state: present
-#         aws_access_key: AKIATLVV7HZZWXRO46H5
-#         aws_secret_key: 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
+#    aws_access_key: {{access_key}}
+#    aws_secret_key: {{aws_secret_key}}
 #         region: us-west-1
 #         zones:
 #           - us-west-1b
@@ -86,9 +86,9 @@
 
 #     - name: add the webservers to the load balancer
 #       local_action: ec2_elb
-#       args:
-#         aws_access_key: AKIATLVV7HZZWXRO46H5
-#         aws_secret_key: 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
+#       args:    
+#aws_access_key: {{access_key}}
+  #  aws_secret_key: {{aws_secret_key}}
 #         instance_id: "{{ item.id }}"
 #         ec2_elbs: aws-elb-demo
 #         state: present
